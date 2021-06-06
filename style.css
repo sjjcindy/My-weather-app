@@ -66,4 +66,9 @@ h1 {
     font-family: "Pacifico", cursive;
     font-size: 50px;
   }
-  
+  p {
+      text-align: left;
+      font-size: small;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black;
+  }
