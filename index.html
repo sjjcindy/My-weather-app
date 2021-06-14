@@ -48,17 +48,26 @@
         </form>
          Todays Forcast 🌦
          <hr />
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="description"></li>
-        </ul>
+
+         <div class="overview">
+          <h1 id="city"></h1>
+          <ul>
+            <li>Last updated: <span id="date"></span></li>
+            <li id="description"></li>
+          </ul>
+        </div>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
-              <div class="float-left">
-                <span class="temperature" id="temperature"></span
-                ><span class="units">°C</span>
+            <div class="clearfix weather-temperature">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
+              alt="clear"
+              class="float-left"
+              />
+                <strong id="temperature"></strong
+                ><span class="units"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
           </div>
@@ -69,8 +78,8 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
+         
     <p>
         <a href="https://github.com/sjjcindy/My-weather-app" target="blank">
         Open-source code </a> by Cynthia Rodriguez
